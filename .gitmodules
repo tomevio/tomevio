@@ -1,9 +1,9 @@
 [submodule "website"]
 	path = website
 	url = https://github.com/s4nj1th/tomevio-website
-[submodule "backend"]
-	path = backend
-	url = https://github.com/s4nj1th/tomevio-backend
 [submodule "mobile-app"]
 	path = mobile-app
 	url = https://github.com/s4nj1th/tomevio-mobile-app
+[submodule "backend"]
+	path = backend
+	url = https://github.com/tomevio/backend

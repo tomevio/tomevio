@@ -15,7 +15,7 @@
 **Tomevio** is a full-stack, open-source book tracking platform. It brings together:
 
 - A **Next.js-powered website**
-- A **high-performance Rust backend**
+- A **high-performance ExpressJS backend**
 - A **Flutter-based mobile app**
 
 This monorepo ties together all components under one roof using Git submodules. Whether you're searching for books, exploring authors, or managing your personal collection—Tomevio offers a fast, clean, and consistent experience on any device.
@@ -26,7 +26,7 @@ This monorepo ties together all components under one roof using Git submodules. 
 
 tomevio/
 ├── website/       # Web frontend (Next.js + TypeScript)
-├── backend/       # REST API (Rust + Axum)
+├── backend/       # REST API (ExpressJS + Node.js)
 └── mobile-app/    # Cross-platform mobile app (Flutter)
 
 ````
@@ -60,7 +60,7 @@ Then follow each component’s README to get it running locally.
 
 ### Backend ([tomevio-backend](https://github.com/s4nj1th/tomevio-backend))
 
-* Written in **Rust**, using **Axum**, **Tokio**, and **Reqwest**
+* Written in **ExpressJS** with **Node.js**
 * Integrates with the OpenLibrary API for metadata
 * Clean modular structure with fast, scalable REST API endpoints
 
@@ -75,7 +75,7 @@ Then follow each component’s README to get it running locally.
 | Component     | Stack/Tools      | Commands                         |
 | ------------- | ---------------- | -------------------------------- |
 | `website/`    | Node.js, Next.js | `npm install && npm run dev`     |
-| `backend/`    | Rust, Cargo      | `cargo build && cargo run`       |
+| `backend/`    | Node             | `npm install && npm start`       |
 | `mobile-app/` | Flutter SDK      | `flutter pub get && flutter run` |
 
 **Configuration files** like `.env.local` (for web) and `constants.dart` (for mobile) must be updated with the correct API base URL.
@@ -110,7 +110,7 @@ Contributions are welcome to any module!
 Please follow best practices for each tech stack:
 
 * **Web**: Prettier formatting, modular React components
-* **Backend**: `cargo fmt`, idiomatic Rust code
+* **Backend**: ESLint rules, MVC structure
 * **Mobile**: `flutter format`, clean separation of concerns
 
 Open a pull request in the relevant submodule repo. Feature ideas, bug reports, and docs improvements are appreciated.
@@ -136,7 +136,7 @@ All Tomevio repositories are open-sourced under the [MIT License](LICENSE).
 | Name       | Description                 | Link                                                                |
 | ---------- | --------------------------- | ------------------------------------------------------------------- |
 | Website    | Next.js frontend            | [tomevio-website](https://github.com/s4nj1th/tomevio-website)       |
-| Backend    | Rust API server             | [tomevio-backend](https://github.com/s4nj1th/tomevio-backend)       |
+| Backend    | ExpressJS API server        | [tomevio-backend](https://github.com/s4nj1th/tomevio-backend)       |
 | Mobile App | Flutter app for Android/iOS | [tomevio-mobile-app](https://github.com/s4nj1th/tomevio-mobile-app) |
 
 > Tomevio is an ongoing passion project. If you're interested in contributing, collaborating, or building on top of it—reach out or fork and start exploring.
